@@ -1,0 +1,413 @@
+{
+  "run_name": "full",
+  "config": {
+    "lines_limit": null,
+    "min_freq": 5,
+    "keep_freq": 1700,
+    "val_eval_words": 1000,
+    "test_eval_words": 1000,
+    "seed": 13
+  },
+  "paths": {
+    "data_root": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/data/full",
+    "model_root": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full",
+    "report_root": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/reports/full",
+    "word_frequency_train": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/data/full/word_frequency_train.tsv",
+    "train_vocab_all": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/data/full/train_vocab_all.txt",
+    "val_gold": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/data/full/eval/val_gold.tsv",
+    "test_gold": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/data/full/eval/test_gold.tsv",
+    "manifest": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/data/full/manifest.json",
+    "eval_guideline": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/eval_guideline.md"
+  },
+  "stats": {
+    "raw_lines": 5000,
+    "train_lines": 4000,
+    "val_lines": 500,
+    "test_lines": 500,
+    "raw_plus_tokens": 228372,
+    "reference_pairs": 228369,
+    "train_vocab_raw_size": 61574,
+    "train_vocab_size_after_filter": 10886,
+    "val_eval_size": 1000,
+    "test_eval_size": 1000
+  },
+  "variants": {
+    "type": {
+      "val": {
+        "num_words": 1000,
+        "exact_match": 0.181,
+        "boundary_precision": 0.6015037593984962,
+        "boundary_recall": 0.3065134099616858,
+        "boundary_f1": 0.40609137055837563,
+        "avg_segments_per_word": 1.665,
+        "oov_rate": 0.294
+      },
+      "test": {
+        "num_words": 1000,
+        "exact_match": 0.169,
+        "boundary_precision": 0.5632022471910112,
+        "boundary_recall": 0.3086989992301771,
+        "boundary_f1": 0.3988065638985579,
+        "avg_segments_per_word": 1.712,
+        "oov_rate": 0.326
+      },
+      "token_stats": {
+        "vocab_size": 10886.0,
+        "entropy": 11.095884215178687,
+        "top10_share": 0.1480608191569088,
+        "avg_segments_per_word": 1.0002073945028607
+      },
+      "paths": {
+        "train_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/type/train.txt",
+        "model_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/type/morfessor.bin",
+        "vocab_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/type/vocab.txt",
+        "keep_words_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/type/keep_words.txt"
+      },
+      "train_words": 10886,
+      "keep_words": 0
+    },
+    "token": {
+      "val": {
+        "num_words": 1000,
+        "exact_match": 0.41,
+        "boundary_precision": 0.5831995719636169,
+        "boundary_recall": 0.8352490421455939,
+        "boundary_f1": 0.686830497794581,
+        "avg_segments_per_word": 2.869,
+        "oov_rate": 0.294
+      },
+      "test": {
+        "num_words": 1000,
+        "exact_match": 0.359,
+        "boundary_precision": 0.5559022360894436,
+        "boundary_recall": 0.8229407236335643,
+        "boundary_f1": 0.6635630043451273,
+        "avg_segments_per_word": 2.923,
+        "oov_rate": 0.326
+      },
+      "token_stats": {
+        "vocab_size": 1582.0,
+        "entropy": 7.292485321630914,
+        "top10_share": 0.3998038822108661,
+        "avg_segments_per_word": 1.800770914994919
+      },
+      "paths": {
+        "train_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/token/train.txt",
+        "model_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/token/morfessor.bin",
+        "vocab_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/token/vocab.txt",
+        "keep_words_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/token/keep_words.txt"
+      },
+      "train_words": 10886,
+      "keep_words": 0
+    },
+    "frequency": {
+      "val": {
+        "num_words": 1000,
+        "exact_match": 0.181,
+        "boundary_precision": 0.5882352941176471,
+        "boundary_recall": 0.31417624521072796,
+        "boundary_f1": 0.4095904095904096,
+        "avg_segments_per_word": 1.697,
+        "oov_rate": 0.294
+      },
+      "test": {
+        "num_words": 1000,
+        "exact_match": 0.172,
+        "boundary_precision": 0.5624142661179699,
+        "boundary_recall": 0.3156274056966898,
+        "boundary_f1": 0.40433925049309666,
+        "avg_segments_per_word": 1.729,
+        "oov_rate": 0.326
+      },
+      "token_stats": {
+        "vocab_size": 10881.0,
+        "entropy": 11.094955765624837,
+        "top10_share": 0.14813630198245584,
+        "avg_segments_per_word": 1.0004177517843333
+      },
+      "paths": {
+        "train_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/frequency/train.txt",
+        "model_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/frequency/morfessor.bin",
+        "vocab_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/frequency/vocab.txt",
+        "keep_words_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/frequency/keep_words.txt"
+      },
+      "train_words": 10871,
+      "keep_words": 15
+    }
+  },
+  "subword_baselines": {
+    "status": "ok",
+    "baselines": {
+      "bpe": {
+        "status": "ok",
+        "selected_by": "best val boundary_f1, tie-break by val exact_match",
+        "best_vocab_size": 8000,
+        "runs": {
+          "8000": {
+            "val": {
+              "num_words": 1000,
+              "exact_match": 0.086,
+              "boundary_precision": 0.23828920570264767,
+              "boundary_recall": 0.1793103448275862,
+              "boundary_f1": 0.20463489287275907,
+              "avg_segments_per_word": 1.982,
+              "oov_rate": 0.294
+            },
+            "test": {
+              "num_words": 1000,
+              "exact_match": 0.1,
+              "boundary_precision": 0.265,
+              "boundary_recall": 0.2040030792917629,
+              "boundary_f1": 0.23053501522401046,
+              "avg_segments_per_word": 2.0,
+              "oov_rate": 0.326
+            },
+            "token_stats": {
+              "vocab_size": 7040.0,
+              "entropy": 10.89659646974068,
+              "top10_share": 0.10087120795925383,
+              "avg_segments_per_word": 1.3540095454512733
+            },
+            "paths": {
+              "tokenizer_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/subword/bpe/8000/tokenizer.json"
+            }
+          },
+          "16000": {
+            "val": {
+              "num_words": 1000,
+              "exact_match": 0.059,
+              "boundary_precision": 0.21399730820995963,
+              "boundary_recall": 0.12183908045977011,
+              "boundary_f1": 0.1552734375,
+              "avg_segments_per_word": 1.743,
+              "oov_rate": 0.294
+            },
+            "test": {
+              "num_words": 1000,
+              "exact_match": 0.074,
+              "boundary_precision": 0.2739541160593792,
+              "boundary_recall": 0.1562740569668976,
+              "boundary_f1": 0.19901960784313724,
+              "avg_segments_per_word": 1.741,
+              "oov_rate": 0.326
+            },
+            "token_stats": {
+              "vocab_size": 14461.0,
+              "entropy": 11.613152912205122,
+              "top10_share": 0.10583584892673478,
+              "avg_segments_per_word": 1.2201644658698527
+            },
+            "paths": {
+              "tokenizer_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/subword/bpe/16000/tokenizer.json"
+            }
+          },
+          "32000": {
+            "val": {
+              "num_words": 1000,
+              "exact_match": 0.048,
+              "boundary_precision": 0.20224719101123595,
+              "boundary_recall": 0.08275862068965517,
+              "boundary_f1": 0.11745513866231648,
+              "avg_segments_per_word": 1.534,
+              "oov_rate": 0.294
+            },
+            "test": {
+              "num_words": 1000,
+              "exact_match": 0.058,
+              "boundary_precision": 0.2767527675276753,
+              "boundary_recall": 0.11547344110854503,
+              "boundary_f1": 0.16295491580662683,
+              "avg_segments_per_word": 1.542,
+              "oov_rate": 0.326
+            },
+            "token_stats": {
+              "vocab_size": 29102.0,
+              "entropy": 12.21420784116256,
+              "top10_share": 0.11145851102190994,
+              "avg_segments_per_word": 1.1112916113767957
+            },
+            "paths": {
+              "tokenizer_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/subword/bpe/32000/tokenizer.json"
+            }
+          }
+        },
+        "val": {
+          "num_words": 1000,
+          "exact_match": 0.086,
+          "boundary_precision": 0.23828920570264767,
+          "boundary_recall": 0.1793103448275862,
+          "boundary_f1": 0.20463489287275907,
+          "avg_segments_per_word": 1.982,
+          "oov_rate": 0.294
+        },
+        "test": {
+          "num_words": 1000,
+          "exact_match": 0.1,
+          "boundary_precision": 0.265,
+          "boundary_recall": 0.2040030792917629,
+          "boundary_f1": 0.23053501522401046,
+          "avg_segments_per_word": 2.0,
+          "oov_rate": 0.326
+        },
+        "token_stats": {
+          "vocab_size": 7040.0,
+          "entropy": 10.89659646974068,
+          "top10_share": 0.10087120795925383,
+          "avg_segments_per_word": 1.3540095454512733
+        },
+        "paths": {
+          "tokenizer_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/subword/bpe/8000/tokenizer.json"
+        }
+      },
+      "wordpiece": {
+        "status": "ok",
+        "selected_by": "best val boundary_f1, tie-break by val exact_match",
+        "best_vocab_size": 8000,
+        "runs": {
+          "8000": {
+            "val": {
+              "num_words": 1000,
+              "exact_match": 0.142,
+              "boundary_precision": 0.30687830687830686,
+              "boundary_recall": 0.2222222222222222,
+              "boundary_f1": 0.2577777777777777,
+              "avg_segments_per_word": 1.945,
+              "oov_rate": 0.294
+            },
+            "test": {
+              "num_words": 1000,
+              "exact_match": 0.142,
+              "boundary_precision": 0.3097713097713098,
+              "boundary_recall": 0.2294072363356428,
+              "boundary_f1": 0.26360017691287047,
+              "avg_segments_per_word": 1.962,
+              "oov_rate": 0.326
+            },
+            "token_stats": {
+              "vocab_size": 7021.0,
+              "entropy": 10.968713862669102,
+              "top10_share": 0.11127534726127293,
+              "avg_segments_per_word": 1.3441593500070788
+            },
+            "paths": {
+              "tokenizer_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/subword/wordpiece/8000/tokenizer.json"
+            }
+          },
+          "16000": {
+            "val": {
+              "num_words": 1000,
+              "exact_match": 0.099,
+              "boundary_precision": 0.2849162011173184,
+              "boundary_recall": 0.15632183908045977,
+              "boundary_f1": 0.20188025729836714,
+              "avg_segments_per_word": 1.716,
+              "oov_rate": 0.294
+            },
+            "test": {
+              "num_words": 1000,
+              "exact_match": 0.12,
+              "boundary_precision": 0.3149717514124294,
+              "boundary_recall": 0.1716705157813703,
+              "boundary_f1": 0.22222222222222224,
+              "avg_segments_per_word": 1.708,
+              "oov_rate": 0.326
+            },
+            "token_stats": {
+              "vocab_size": 14378.0,
+              "entropy": 11.657608962024522,
+              "top10_share": 0.1069578514388674,
+              "avg_segments_per_word": 1.2145662914554054
+            },
+            "paths": {
+              "tokenizer_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/subword/wordpiece/16000/tokenizer.json"
+            }
+          },
+          "32000": {
+            "val": {
+              "num_words": 1000,
+              "exact_match": 0.083,
+              "boundary_precision": 0.30196078431372547,
+              "boundary_recall": 0.11800766283524904,
+              "boundary_f1": 0.16969696969696968,
+              "avg_segments_per_word": 1.51,
+              "oov_rate": 0.294
+            },
+            "test": {
+              "num_words": 1000,
+              "exact_match": 0.105,
+              "boundary_precision": 0.3688212927756654,
+              "boundary_recall": 0.14934565050038492,
+              "boundary_f1": 0.21260273972602742,
+              "avg_segments_per_word": 1.526,
+              "oov_rate": 0.326
+            },
+            "token_stats": {
+              "vocab_size": 28799.0,
+              "entropy": 12.211658441855523,
+              "top10_share": 0.11091742345432563,
+              "avg_segments_per_word": 1.1094871419555938
+            },
+            "paths": {
+              "tokenizer_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/subword/wordpiece/32000/tokenizer.json"
+            }
+          }
+        },
+        "val": {
+          "num_words": 1000,
+          "exact_match": 0.142,
+          "boundary_precision": 0.30687830687830686,
+          "boundary_recall": 0.2222222222222222,
+          "boundary_f1": 0.2577777777777777,
+          "avg_segments_per_word": 1.945,
+          "oov_rate": 0.294
+        },
+        "test": {
+          "num_words": 1000,
+          "exact_match": 0.142,
+          "boundary_precision": 0.3097713097713098,
+          "boundary_recall": 0.2294072363356428,
+          "boundary_f1": 0.26360017691287047,
+          "avg_segments_per_word": 1.962,
+          "oov_rate": 0.326
+        },
+        "token_stats": {
+          "vocab_size": 7021.0,
+          "entropy": 10.968713862669102,
+          "top10_share": 0.11127534726127293,
+          "avg_segments_per_word": 1.3441593500070788
+        },
+        "paths": {
+          "tokenizer_file": "/Users/I772971/Documents/Shared Task /tokenizer project-2/arabic_seg/models/full/subword/wordpiece/8000/tokenizer.json"
+        }
+      }
+    }
+  },
+  "tests": {
+    "pipeline_health": {
+      "word_frequency_exists": true,
+      "val_gold_exists": true,
+      "test_gold_exists": true,
+      "all_variant_models_exist": true
+    },
+    "metric_sanity": {
+      "pass": true,
+      "expected_precision": 0.625,
+      "expected_recall": 0.4166666666666667,
+      "expected_f1": 0.5,
+      "computed": {
+        "num_words": 10,
+        "exact_match": 0.3,
+        "boundary_precision": 0.625,
+        "boundary_recall": 0.4166666666666667,
+        "boundary_f1": 0.5,
+        "avg_segments_per_word": 1.8
+      }
+    },
+    "selection_stability": {
+      "pass": true,
+      "val_size": 1000,
+      "test_size": 1000
+    },
+    "run_pass": true
+  }
+}
