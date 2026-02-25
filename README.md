@@ -47,7 +47,6 @@ requirements.txt                         # Pinned Python dependencies
 
 ### 1) Create virtual environment
 ```bash
-cd "tokenizer project-2"
 python3 -m venv .venv
 source .venv/bin/activate
 ```
@@ -60,17 +59,17 @@ pip install -r requirements.txt
 
 ### 3) Run full pipeline (Morfessor + BPE + WordPiece)
 ```bash
-python3 scripts/arabic_morfessor_pipeline.py full --exp-dir arabic_seg
+python scripts/arabic_morfessor_pipeline.py full --exp-dir arabic_seg
 ```
 
 ### 4) Run Farasa comparison (optional)
 ```bash
-python3 scripts/arabic_morfessor_pipeline.py farasa --exp-dir arabic_seg
+python scripts/arabic_morfessor_pipeline.py farasa --exp-dir arabic_seg
 ```
 
 ### 5) Run everything in one command
 ```bash
-python3 scripts/arabic_morfessor_pipeline.py all --exp-dir arabic_seg
+python scripts/arabic_morfessor_pipeline.py all --exp-dir arabic_seg
 ```
 
 ## Results Location
@@ -89,4 +88,3 @@ After `farasa`:
 
 - Farasa mode requires Farasa runtime binaries/JAR to be available in the expected runtime path.
 - `results_summary.csv` is the main single-file view for quick comparison.
-- Detailed files are kept for auditability and reproducibility.
